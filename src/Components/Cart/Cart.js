@@ -96,7 +96,7 @@ export default function Cart() {
 
 
     }, []);
-
+    
     let total = 0;
     for (let i = 0; i < products.length; i++) {
         total = total + products[i].price;
@@ -106,7 +106,7 @@ export default function Cart() {
         setTotalPurchase(total);
     }, [products]);
 
-
+    
     if (isLoading) {
         return <div className="App">Loading...</div>;
     }
@@ -152,7 +152,6 @@ export default function Cart() {
 
         post.then((answer) => {
             setProducts(answer.data.cart);
-            console.log(answer.data.cart)
             setLoading(false);
             alert('Compra finalizada com sucesso');
             navigate('/homepage');
