@@ -4,7 +4,7 @@ import { useState } from "react"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
 import Footer from "../Homepage/Footer"
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import UserContext from "../Contexts/UserContext";
 
 export default function Configuser() {
