@@ -4,9 +4,11 @@ import { useState } from "react"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
 import Footer from "../Homepage/Footer"
+import { useState, useContext } from "react";
+import UserContext from "../Contexts/UserContext";
 
 export default function Configuser() {
-
+  const context = useContext(UserContext);
   const [email, setEmail] = useState("")
   const [senha, setSenha] = useState("")
   const [nome, setNome] = useState("")
@@ -20,7 +22,7 @@ export default function Configuser() {
     event.preventDefault();
 
     try {
-      await axios.put("http://localhost:5000/configuser",
+      await axios.put(context.configuser,
       {
         email: email,
         avatar: avatar,

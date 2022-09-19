@@ -24,11 +24,12 @@ export default function App() {
     const deleteRemoveFromCart = "https://back-projeto-taubatende.herokuapp.com/removefromcart";
     const deleteEmptyCart = "https://back-projeto-taubatende.herokuapp.com/emptycart";
     const logout = "https://back-projeto-taubatende.herokuapp.com/logout";
+    const configuser = "http://localhost:5000/configuser"
 
 
     return (
         <>
-            <UserContext.Provider value={{ logout, getMaisVendidos, userInfo, setUserInfo, postSignUp, postLogin, getProducts, postAddCart, getGetCart, deleteRemoveFromCart, deleteEmptyCart }}>
+            <UserContext.Provider value={{configuser, logout, getMaisVendidos, userInfo, setUserInfo, postSignUp, postLogin, getProducts, postAddCart, getGetCart, deleteRemoveFromCart, deleteEmptyCart }}>
                 <GlobalStyle />
                 <BrowserRouter>
                     <Routes>
