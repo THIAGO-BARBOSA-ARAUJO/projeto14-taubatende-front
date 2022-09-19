@@ -15,16 +15,17 @@ import Cart from "../Cart/Cart";
 
 export default function App() {
     const [userInfo, setUserInfo] = useState({});
-    const postSignUp = "http://localhost:5000/signup";
-    const postLogin = "http://localhost:5000/login";
-    const getMaisVendidos = "http://localhost:5000/maisvendidos"
-    const getProducts = "http://localhost:5000/products";
-    const postAddCart = "http://localhost:5000/addcart";
-    const getGetCart = "http://localhost:5000/getcart";
-    const deleteRemoveFromCart = "http://localhost:5000/removefromcart";
-    const deleteEmptyCart = "http://localhost:5000/emptycart";
-    const logout = "http://localhost:5000/logout";
+    const postSignUp = "https://back-projeto-taubatende.herokuapp.com//signup";
+    const postLogin = "https://back-projeto-taubatende.herokuapp.com//login";
+    const getMaisVendidos = "https://back-projeto-taubatende.herokuapp.com//maisvendidos"
+    const getProducts = "https://back-projeto-taubatende.herokuapp.com//products";
+    const postAddCart = "https://back-projeto-taubatende.herokuapp.com//addcart";
+    const getGetCart = "https://back-projeto-taubatende.herokuapp.com//getcart";
+    const deleteRemoveFromCart = "https://back-projeto-taubatende.herokuapp.com//removefromcart";
+    const deleteEmptyCart = "https://back-projeto-taubatende.herokuapp.com//emptycart";
+    const logout = "https://back-projeto-taubatende.herokuapp.com//logout";
 
+    
     return (
         <>
             <UserContext.Provider value={{ logout, getMaisVendidos, userInfo, setUserInfo, postSignUp, postLogin, getProducts, postAddCart, getGetCart, deleteRemoveFromCart, deleteEmptyCart }}>
