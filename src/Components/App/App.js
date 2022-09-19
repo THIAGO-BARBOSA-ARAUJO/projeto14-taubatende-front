@@ -24,7 +24,7 @@ export default function App() {
     const deleteRemoveFromCart = "https://back-projeto-taubatende.herokuapp.com/removefromcart";
     const deleteEmptyCart = "https://back-projeto-taubatende.herokuapp.com/emptycart";
     const logout = "https://back-projeto-taubatende.herokuapp.com/logout";
-    const configuser = "http://localhost:5000/configuser"
+    const configuser = "https://back-projeto-taubatende.herokuapp.com/configuser"
 
 
     return (
