@@ -22,8 +22,8 @@ export default function App() {
     const postAddCart = "https://back-projeto-taubatende.herokuapp.com/addcart";
     const getGetCart = "https://back-projeto-taubatende.herokuapp.com/getcart";
     const deleteRemoveFromCart = "https://back-projeto-taubatende.herokuapp.com/removefromcart";
-    const deleteEmptyCart = "https://back-projeto-taubatende.herokuapp.com//emptycart";
-    const logout = "https://back-projeto-taubatende.herokuapp.com//logout";
+    const deleteEmptyCart = "https://back-projeto-taubatende.herokuapp.com/emptycart";
+    const logout = "https://back-projeto-taubatende.herokuapp.com/logout";
 
 
     return (
