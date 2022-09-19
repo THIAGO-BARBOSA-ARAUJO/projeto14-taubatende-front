@@ -15,17 +15,17 @@ import Cart from "../Cart/Cart";
 
 export default function App() {
     const [userInfo, setUserInfo] = useState({});
-    const postSignUp = "https://back-projeto-taubatende.herokuapp.com//signup";
-    const postLogin = "https://back-projeto-taubatende.herokuapp.com//login";
-    const getMaisVendidos = "https://back-projeto-taubatende.herokuapp.com//maisvendidos"
-    const getProducts = "https://back-projeto-taubatende.herokuapp.com//products";
-    const postAddCart = "https://back-projeto-taubatende.herokuapp.com//addcart";
-    const getGetCart = "https://back-projeto-taubatende.herokuapp.com//getcart";
-    const deleteRemoveFromCart = "https://back-projeto-taubatende.herokuapp.com//removefromcart";
+    const postSignUp = "https://back-projeto-taubatende.herokuapp.com/signup";
+    const postLogin = "https://back-projeto-taubatende.herokuapp.com/login";
+    const getMaisVendidos = "https://back-projeto-taubatende.herokuapp.com/maisvendidos"
+    const getProducts = "https://back-projeto-taubatende.herokuapp.com/products";
+    const postAddCart = "https://back-projeto-taubatende.herokuapp.com/addcart";
+    const getGetCart = "https://back-projeto-taubatende.herokuapp.com/getcart";
+    const deleteRemoveFromCart = "https://back-projeto-taubatende.herokuapp.com/removefromcart";
     const deleteEmptyCart = "https://back-projeto-taubatende.herokuapp.com//emptycart";
     const logout = "https://back-projeto-taubatende.herokuapp.com//logout";
 
-    
+
     return (
         <>
             <UserContext.Provider value={{ logout, getMaisVendidos, userInfo, setUserInfo, postSignUp, postLogin, getProducts, postAddCart, getGetCart, deleteRemoveFromCart, deleteEmptyCart }}>
